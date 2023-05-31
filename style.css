@@ -1,0 +1,70 @@
+.header{
+display: grid;
+justify-content: center;
+text-align: center;
+border-bottom:1px solid;
+font-weight:bold;
+}
+.image{
+    margin-left: 150px;
+}
+.institut{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 115px;
+}
+.disciplina{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.otchet{
+    display: flex;
+    justify-content: center;
+    font-weight:bold;
+    font-size: 18px;
+}
+.student{
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight:bold;
+}
+.group{
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    font-weight:bold;
+}
+.teacher{
+    display: flex;
+    gap: 350px;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight:bold;
+}
+.dolznost{
+    display: flex;
+    gap: 420px;
+    justify-content: center;
+    font-weight:bold;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+.button{
+    display: grid;
+    width: 120px;
+    height: 48px;
+    background: #918f8f;
+    text-align: center;
+    border-radius: 7px;
+    color: black;
+    line-height: 25px;
+    font-size: 14px;
+}

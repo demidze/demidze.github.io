@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор титульного листа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="button" href="list.html" onclick="otchet()">Сгенерировать отчет</a>
+    <div class="header">
+        <img class="image" width='200' src="image.jpg"></img>
+        <label>Минобрнауки РОССИИ</label>
+        <label>федеральное государственное бюджетное образовательное учреждение</label>
+        <label>высшего образования</label>
+        <label>"Московский государственный технологический университет "СТАНКИН"</label>
+        <label>(ФГБОУ ВО "МГТУ "СТАНКИН")</label>
+    </div>
+    <div class="institut">
+        <label>Институт цифровых <br> интеллектуальных систем</label>
+        <label>Кафедра <br> <input id="kafedra" type="text"></label>
+    </div>
+    <div class="disciplina">
+        <label>Дисциплина " <input id="disp" type="text">"</label>
+    </div>
+    <div class="otchet">
+        <label>Отчет по лабораторной работе</label>
+    </div>
+    <div class="otchet">
+        <input id="nazvanie" type="text" placeholder="Название работы">
+    </div>
+    <div class="student">
+        <label>Выполнил</label>
+        <input id="st" type="text" placeholder="Введите ФИО студента">
+    </div>
+    <div class="group">
+        <label>студент гр. <input id="gr" type="text" placeholder="Введите название группы"></label>
+        <label></label>
+    </div>
+    <div class="teacher">
+        <label>Проверил</label>
+        <input id="teac" type="text" placeholder="Введите ФИО преподавателя">
+    </div>
+    <div class="dolznost">
+        <input id="dol" type="text" placeholder="Введите должность">
+        <label></label>
+    </div>
+    <script>
+        function otchet(){
+            localStorage.setItem('kafedra_key',String(document.getElementById("kafedra").value));
+            localStorage.setItem('disp_key',String(document.getElementById("disp").value));
+            localStorage.setItem('nazvanie_key',String(document.getElementById("nazvanie").value));
+            localStorage.setItem('st_key',String(document.getElementById("st").value));
+            localStorage.setItem('gr_key',String(document.getElementById("gr").value));
+            localStorage.setItem('teac_key',String(document.getElementById("teac").value));
+            localStorage.setItem('dol_key',String(document.getElementById("dol").value));
+        }
+    </script>
+    
+</body>
+<footer>Москва 2023 г.</footer>
+</html>

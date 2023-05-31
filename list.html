@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Титульный лист</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="button" href="index.html" onclick="otchet()">Вернуться назад</a>
+    <div class="header">
+        <img class="image" width='200' src="image.jpg"></img>
+        <label>Минобрнауки РОССИИ</label>
+        <label>федеральное государственное бюджетное образовательное учреждение</label>
+        <label>высшего образования</label>
+        <label>"Московский государственный технологический университет "СТАНКИН"</label>
+        <label>(ФГБОУ ВО "МГТУ "СТАНКИН")</label>
+    </div>
+    <div class="institut">
+        <label>Институт цифровых <br> интеллектуальных систем</label>
+        <label>Кафедра <br> <label id="kafedra_n">Кафедра КСУ</label> </label>
+    </div>
+    <div class="disciplina">
+        <label>Дисциплина " <label id="disp_n"></label>"</label>
+    </div>
+    <div class="otchet">
+        <label>Отчет по лабораторной работе</label>
+    </div>
+    <div class="otchet">
+        <label id="nazvanie_n"></label>
+    </div>
+    <div class="student">
+        <label>Выполнил</label>
+        <label id="st_n"></label>
+    </div>
+    <div class="group">
+        <label>студент гр. <label id="gr_n"></label></label>
+        <label></label>
+    </div>
+    <div class="teacher">
+        <label>Проверил</label>
+        <label id="teac_n"></label>
+    </div>
+    <div class="dolznost">
+        <label id="dol_n"></label>
+        <label></label>
+    </div>
+    <script>
+        window.onload = function()
+        {
+            document.getElementById("kafedra_n").innerHTML = localStorage.getItem("kafedra_key");
+            document.getElementById("disp_n").innerHTML = localStorage.getItem("disp_key");
+            document.getElementById("nazvanie_n").innerHTML = localStorage.getItem("nazvanie_key");
+            document.getElementById("st_n").innerHTML = localStorage.getItem("st_key");
+            document.getElementById("gr_n").innerHTML = localStorage.getItem("gr_key");
+            document.getElementById("teac_n").innerHTML = localStorage.getItem("teac_key");
+            document.getElementById("dol_n").innerHTML = localStorage.getItem("dol_key");
+        }
+    </script>
+</body>
+<footer>Москва 2023 г.</footer>
+</html>
